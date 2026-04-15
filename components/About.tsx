@@ -128,7 +128,7 @@ const About = () => {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/lokesh-s"
+                    href="https://www.linkedin.com/in/lokesh-s-b018a424a/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group flex items-center gap-3 p-3 sm:p-4 rounded-xl bg-primary/5 border border-primary/30 hover:border-primary/60 hover:bg-primary/10 transition-all"
