@@ -64,9 +64,9 @@ const Skills = () => {
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold"
             >
-              My <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Skills</span>
+              My Skills
             </motion.h2>
-            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-gradient-to-r from-primary to-accent rounded-full" />
+            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full" />
           </div>
 
           {/* Skills Grid */}
@@ -82,7 +82,7 @@ const Skills = () => {
                 key={categoryIndex}
                 variants={itemVariants}
                 whileHover={{ y: -5, boxShadow: '0 20px 40px rgba(147, 112, 219, 0.1)' }}
-                className="p-4 sm:p-6 rounded-xl bg-gradient-to-br from-accent/10 to-primary/5 border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+                className="p-4 sm:p-6 rounded-xl bg-primary/5 border border-primary/30 hover:border-primary/60 transition-all duration-300 group"
               >
                 <h3 className="text-base sm:text-lg font-bold mb-3 sm:mb-4 text-primary group-hover:text-accent transition-colors">
                   {category.category}
@@ -108,7 +108,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="mt-8 sm:mt-12 p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-primary/10 via-accent/10 to-primary/10 border border-border/50 space-y-4 sm:space-y-6"
+            className="mt-8 sm:mt-12 p-6 sm:p-8 rounded-2xl bg-primary/10 border border-primary/30 space-y-4 sm:space-y-6"
           >
             <h3 className="text-lg sm:text-xl font-bold">Expertise Areas</h3>
             {[
@@ -129,7 +129,7 @@ const Skills = () => {
                     whileInView={{ width: `${expertise.percentage}%` }}
                     transition={{ duration: 0.8, delay: 0.1 * i }}
                     viewport={{ once: true }}
-                    className="h-full bg-gradient-to-r from-primary to-accent rounded-full"
+                    className="h-full bg-primary rounded-full"
                   />
                 </div>
               </div>

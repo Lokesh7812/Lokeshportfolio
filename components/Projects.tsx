@@ -81,9 +81,9 @@ const Projects = () => {
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold"
             >
-              Featured <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Projects</span>
+              Featured Projects
             </motion.h2>
-            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-gradient-to-r from-primary to-accent rounded-full" />
+            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full" />
           </div>
 
           {/* Projects Grid */}
@@ -99,7 +99,7 @@ const Projects = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -10 }}
-                className="group rounded-2xl overflow-hidden bg-gradient-to-br from-accent/10 to-primary/5 border border-border/50 hover:border-primary/50 transition-all duration-300"
+                className="group rounded-2xl overflow-hidden bg-primary/5 border border-primary/30 hover:border-primary/60 transition-all duration-300"
               >
                 {/* Card Header with Icon */}
                 <div className="p-6 sm:p-8 space-y-4 sm:space-y-6">

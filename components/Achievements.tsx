@@ -119,9 +119,9 @@ const Achievements = () => {
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold"
             >
-              Achievements &amp; <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Awards</span>
+              Achievements &amp; Awards
             </motion.h2>
-            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-gradient-to-r from-primary to-accent rounded-full" />
+            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full" />
           </div>
 
           {/* Achievements Grid */}
@@ -137,10 +137,10 @@ const Achievements = () => {
                 key={index}
                 variants={itemVariants}
                 whileHover={{ y: -5, scale: 1.02 }}
-                className={`p-4 sm:p-6 rounded-xl bg-gradient-to-br ${getCategoryColor(achievement.category)} border ${getCategoryBorder(achievement.category)} transition-all duration-300 group relative overflow-hidden`}
+                className={`p-4 sm:p-6 rounded-xl bg-primary/5 border border-primary/30 transition-all duration-300 group relative overflow-hidden`}
               >
                 {/* Decorative background */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-primary/5 to-accent/5 transition-opacity duration-300" />
+                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-primary/10 transition-opacity duration-300" />
 
                 <div className="relative z-10 space-y-3">
                   <div className="text-3xl sm:text-4xl">{achievement.icon}</div>
@@ -183,9 +183,9 @@ const Achievements = () => {
               <motion.div
                 key={i}
                 whileHover={{ scale: 1.05 }}
-                className="p-3 sm:p-4 text-center rounded-lg bg-gradient-to-br from-primary/10 to-accent/10 border border-border/50 group"
+                className="p-3 sm:p-4 text-center rounded-lg bg-primary/10 border border-primary/30 group"
               >
-                <div className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent group-hover:scale-110 transition-transform">
+                <div className="text-2xl sm:text-3xl font-bold text-primary group-hover:scale-110 transition-transform">
                   {stat.count}
                 </div>
                 <div className="text-xs sm:text-sm text-foreground/60 mt-1">{stat.label}</div>

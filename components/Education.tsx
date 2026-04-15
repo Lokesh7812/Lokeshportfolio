@@ -23,9 +23,9 @@ const Education = () => {
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold"
             >
-              <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Education</span>
+              Education
             </motion.h2>
-            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-gradient-to-r from-primary to-accent rounded-full" />
+            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full" />
           </div>
 
           {/* Education Card */}
@@ -35,13 +35,13 @@ const Education = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
             whileHover={{ y: -8 }}
-            className="p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-primary/10 via-accent/5 to-background border border-border/50 hover:border-primary/50 transition-all duration-300 group"
+            className="p-6 sm:p-8 rounded-2xl bg-primary/10 border border-primary/30 hover:border-primary/60 transition-all duration-300 group"
           >
             <div className="flex flex-col md:flex-row gap-6 sm:gap-8 items-start">
               {/* Icon */}
               <motion.div
                 whileHover={{ rotate: 12, scale: 1.1 }}
-                className="p-4 sm:p-6 rounded-xl bg-gradient-to-br from-primary/20 to-accent/20 group-hover:shadow-lg group-hover:shadow-primary/30 transition-all"
+                className="p-4 sm:p-6 rounded-xl bg-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30 transition-all"
               >
                 <GraduationCap className="w-8 h-8 sm:w-10 sm:h-10 text-primary" />
               </motion.div>
@@ -108,7 +108,7 @@ const Education = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="p-4 sm:p-6 rounded-xl bg-gradient-to-r from-primary/5 to-accent/5 border border-border/50 text-center"
+            className="p-4 sm:p-6 rounded-xl bg-primary/5 border border-primary/20 text-center"
           >
             <p className="text-xs sm:text-sm text-foreground/70 leading-relaxed">
               Beyond formal education, I continuously upskill through real-world projects, online courses, and practical development experience. My learning approach combines theoretical knowledge with hands-on problem-solving.

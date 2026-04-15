@@ -49,7 +49,7 @@ const Footer = () => {
               className="space-y-4 sm:space-y-6"
             >
               <div>
-                <h3 className="text-2xl sm:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <h3 className="text-2xl sm:text-3xl font-bold text-foreground">
                   Lokesh S
                 </h3>
                 <p className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2">
@@ -116,7 +116,7 @@ const Footer = () => {
           </div>
 
           {/* Divider */}
-          <div className="h-px bg-gradient-to-r from-transparent via-border to-transparent" />
+          <div className="h-px bg-border" />
 
           {/* Bottom Section */}
           <motion.div

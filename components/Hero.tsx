@@ -97,9 +97,8 @@ const Hero = () => {
         className="absolute inset-0 w-full h-full"
       />
 
-      {/* Gradient Overlays */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-transparent to-background pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-r from-primary/5 via-transparent to-accent/5 pointer-events-none" />
+      {/* Background Overlays */}
+      <div className="absolute inset-0 bg-background pointer-events-none opacity-30" />
 
       {/* Content */}
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 w-full text-center">
@@ -126,12 +125,9 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-balance"
+            className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-balance text-foreground"
           >
-            Hi, I&apos;m{' '}
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
-              Lokesh S
-            </span>
+            Hi, I&apos;m Lokesh S
           </motion.h1>
 
           {/* Subtitle */}
@@ -163,7 +159,7 @@ const Hero = () => {
           >
             <button
               onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
-              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
+              className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/30 hover:bg-primary/90 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               View Projects <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
@@ -190,9 +186,9 @@ const Hero = () => {
               <motion.div
                 key={i}
                 whileHover={{ y: -5 }}
-                className="text-center p-3 sm:p-4 rounded-lg bg-accent/5 border border-accent/20"
+                className="text-center p-3 sm:p-4 rounded-lg bg-primary/5 border border-primary/20"
               >
-                <div className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">
                   {stat.number}
                 </div>
                 <div className="text-xs sm:text-sm text-muted-foreground mt-1 sm:mt-2">{stat.label}</div>

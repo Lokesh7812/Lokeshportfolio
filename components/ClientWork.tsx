@@ -75,9 +75,9 @@ const ClientWork = () => {
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold"
             >
-              Client Work <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Showcase</span>
+              Client Work Showcase
             </motion.h2>
-            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-gradient-to-r from-primary to-accent rounded-full" />
+            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full" />
           </div>
 
           {/* Stats */}
@@ -86,7 +86,7 @@ const ClientWork = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
             viewport={{ once: true }}
-            className="p-4 sm:p-6 rounded-xl bg-gradient-to-r from-primary/10 to-accent/10 border border-border/50 text-center"
+            className="p-4 sm:p-6 rounded-xl bg-primary/10 border border-primary/30 text-center"
           >
             <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-primary">30+</div>
             <div className="text-sm sm:text-base text-foreground/70 mt-1">Live Client Projects Delivered</div>
@@ -108,7 +108,7 @@ const ClientWork = () => {
                 rel="noopener noreferrer"
                 variants={itemVariants}
                 whileHover={{ y: -8, boxShadow: '0 20px 40px rgba(147, 112, 219, 0.15)' }}
-                className="group p-4 sm:p-6 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border/50 hover:border-primary/50 transition-all duration-300 cursor-pointer"
+                className="group p-4 sm:p-6 rounded-xl bg-primary/10 border border-primary/30 hover:border-primary/60 transition-all duration-300 cursor-pointer"
               >
                 <div className="flex items-start justify-between mb-3 sm:mb-4">
                   <div className="text-3xl sm:text-4xl">{client.icon}</div>
@@ -136,7 +136,7 @@ const ClientWork = () => {
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
-            className="text-center p-4 sm:p-6 rounded-xl bg-gradient-to-r from-accent/5 to-primary/5 border border-border/50"
+            className="text-center p-4 sm:p-6 rounded-xl bg-primary/5 border border-primary/20"
           >
             <p className="text-xs sm:text-sm text-foreground/70">
               <span className="font-semibold text-primary">★ Showcasing a sample</span> of 30+ successful client projects delivered with excellent results and 100% client satisfaction

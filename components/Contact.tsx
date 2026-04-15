@@ -75,7 +75,7 @@ const Contact = () => {
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold"
             >
-              Let&apos;s <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Connect</span>
+              Let&apos;s Connect
             </motion.h2>
             <motion.p
               initial={{ opacity: 0 }}
@@ -86,7 +86,7 @@ const Contact = () => {
             >
               Have a project in mind? Want to collaborate? Or just say hello? Feel free to reach out through any of these channels. I&apos;d love to hear from you!
             </motion.p>
-            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-gradient-to-r from-primary to-accent rounded-full mx-auto" />
+            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full mx-auto" />
           </div>
 
           {/* Contact Methods */}
@@ -111,10 +111,10 @@ const Contact = () => {
                     y: -15,
                     boxShadow: '0 30px 60px rgba(147, 112, 219, 0.2)',
                   }}
-                  className={`group p-6 sm:p-8 rounded-2xl bg-gradient-to-br ${method.color} border ${method.borderColor} transition-all duration-300 text-center relative overflow-hidden`}
+                  className={`group p-6 sm:p-8 rounded-2xl bg-primary/10 border border-primary/30 transition-all duration-300 text-center relative overflow-hidden`}
                 >
                   {/* Background Animation */}
-                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-gradient-to-br from-primary/5 to-accent/5 transition-opacity duration-300" />
+                  <div className="absolute inset-0 opacity-0 group-hover:opacity-100 bg-primary/20 transition-opacity duration-300" />
 
                   <div className="relative z-10 space-y-4 sm:space-y-6">
                     {/* Icon */}
@@ -122,7 +122,7 @@ const Contact = () => {
                       whileHover={{ scale: 1.2, rotate: 10 }}
                       className="flex justify-center"
                     >
-                      <div className={`p-4 sm:p-5 rounded-xl bg-gradient-to-br ${method.color} border ${method.borderColor}`}>
+                      <div className={`p-4 sm:p-5 rounded-xl bg-primary/20 border border-primary/40`}>
                         <Icon className={`w-6 h-6 sm:w-8 sm:h-8 ${method.textColor}`} />
                       </div>
                     </motion.div>
@@ -158,7 +158,7 @@ const Contact = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
-            className="p-6 sm:p-8 rounded-2xl bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 border border-border/50 text-center"
+            className="p-6 sm:p-8 rounded-2xl bg-primary/5 border border-primary/20 text-center"
           >
             <h3 className="text-lg sm:text-xl font-bold mb-2 sm:mb-3">Email Me</h3>
             <a
@@ -185,7 +185,7 @@ const Contact = () => {
             </p>
             <a
               href="https://wa.me/918056052603"
-              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-primary to-accent text-primary-foreground font-bold rounded-xl hover:shadow-lg hover:shadow-primary/50 transition-all duration-300 text-sm sm:text-base"
+              className="inline-flex items-center justify-center px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-bold rounded-xl hover:shadow-lg hover:shadow-primary/50 hover:bg-primary/90 transition-all duration-300 text-sm sm:text-base"
             >
               Let&apos;s Talk 💬
             </a>

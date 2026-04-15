@@ -43,22 +43,22 @@ const Experience = () => {
         >
           {/* Section Title */}
           <div className="space-y-2 sm:space-y-4">
-            <motion.h2
+            <            motion.h2
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
               viewport={{ once: true }}
               className="text-3xl sm:text-4xl md:text-5xl font-bold"
             >
-              Work <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Experience</span>
+              Work Experience
             </motion.h2>
-            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-gradient-to-r from-primary to-accent rounded-full" />
+            <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full" />
           </div>
 
           {/* Timeline */}
           <div className="space-y-6 sm:space-y-8 relative">
             {/* Timeline Line */}
-            <div className="absolute left-4 sm:left-6 lg:left-auto top-0 bottom-0 w-1 bg-gradient-to-b from-primary via-accent to-background lg:hidden" />
+              <div className="absolute left-4 sm:left-6 lg:left-auto top-0 bottom-0 w-1 bg-primary lg:hidden" />
 
             {experiences.map((exp, index) => (
               <motion.div
@@ -123,10 +123,10 @@ const Experience = () => {
                   whileInView={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.6, delay: index * 0.1 }}
                   viewport={{ once: true }}
-                  className="hidden lg:block p-6 rounded-2xl bg-gradient-to-br from-primary/10 to-accent/10 border border-border/50"
+                  className="hidden lg:block p-6 rounded-2xl bg-primary/10 border border-primary/30"
                 >
                   <div className="space-y-4">
-                    <div className="h-40 bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg flex items-center justify-center">
+                    <div className="h-40 bg-primary/20 rounded-lg flex items-center justify-center">
                       <span className="text-4xl font-bold text-primary/30">
                         {index === 0 ? '📊' : '💼'}
                       </span>
