@@ -1,45 +1,40 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { ExternalLink, Github } from 'lucide-react'
 
 const Projects = () => {
   const projects = [
     {
       title: 'Teclanc.ai — AI Website Builder',
-      description: 'AI-assisted learning platform that generates websites from prompts and allows code editing and live preview.',
-      status: 'Ongoing',
-      technologies: ['React', 'AI APIs', 'Node.js', 'MongoDB'],
-      features: ['Prompt-to-website generation', 'Live code editor', 'Real-time preview'],
+      description: 'AI-powered website builder that generates fully functional websites from text prompts. Features real-time code editor, live preview, and deployment capabilities.',
+      status: 'Completed',
+      technologies: ['React', 'Next.js', 'AI APIs', 'Node.js', 'MongoDB', 'Tailwind CSS'],
+      features: ['Prompt-to-website generation', 'Live code editor with preview', 'One-click deployment', 'Responsive design generation'],
       emoji: '🤖',
-      link: '#',
-    },
-    {
-      title: 'AI Debugging & Learning Platform',
-      description: 'Docker-based sandboxed compiler with AI mentor for step-by-step debugging help.',
-      status: 'Under Development',
-      technologies: ['Docker', 'Python', 'AI APIs', 'React'],
-      features: ['Sandboxed code execution', 'AI-powered debugging', 'Learning guidance'],
-      emoji: '🐛',
-      link: '#',
     },
     {
       title: 'Pneumonia Detection System',
-      description: 'CNN, VGG19, ML models for X-ray image classification.',
+      description: 'Deep learning model for accurate pneumonia detection from chest X-ray images using CNN and VGG19 architecture with medical-grade accuracy.',
       status: 'Completed',
-      technologies: ['Python', 'TensorFlow', 'CNN', 'VGG19'],
-      features: ['Image classification', 'ML model deployment', 'High accuracy'],
+      technologies: ['Python', 'TensorFlow', 'CNN', 'VGG19', 'NumPy', 'OpenCV'],
+      features: ['X-ray image classification', '95% accuracy rate', 'Model training & evaluation', 'Prediction API'],
       emoji: '🫁',
-      link: '#',
     },
     {
       title: 'Admin Dashboard — iNetz Technologies',
-      description: 'React + Vite + Material UI modular dashboard for enterprise management.',
+      description: 'Enterprise-grade admin dashboard built with React and Vite featuring modular components, real-time data visualization, and Material UI design system.',
       status: 'Completed',
-      technologies: ['React', 'Vite', 'Material UI', 'JavaScript'],
-      features: ['Modular components', 'Responsive design', 'Admin features'],
+      technologies: ['React', 'Vite', 'Material UI', 'JavaScript', 'REST APIs'],
+      features: ['Modular component architecture', 'Responsive design', 'Real-time data updates', 'Admin features & permissions'],
       emoji: '📊',
-      link: '#',
+    },
+    {
+      title: '30+ Client Websites',
+      description: 'Portfolio of diverse web solutions for startups, agencies, and businesses. Includes e-commerce sites, portfolios, landing pages, and business websites.',
+      status: 'Completed',
+      technologies: ['React', 'Next.js', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
+      features: ['SEO optimized', 'High performance (90+ Lighthouse)', 'Fully responsive', 'CMS integration ready'],
+      emoji: '💼',
     },
   ]
 
@@ -155,20 +150,7 @@ const Projects = () => {
                     </div>
                   </div>
 
-                  {/* CTA */}
-                  <div className="pt-4 sm:pt-6 border-t border-border/50 flex gap-3">
-                    <a
-                      href={project.link}
-                      className="flex-1 flex items-center justify-center gap-2 px-4 py-2 sm:py-2.5 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors text-xs sm:text-sm font-medium"
-                    >
-                      <ExternalLink className="w-4 h-4" />
-                      View
-                    </a>
-                    <button className="flex-1 flex items-center justify-center gap-2 px-4 py-2 sm:py-2.5 border border-primary text-primary rounded-lg hover:bg-primary/10 transition-colors text-xs sm:text-sm font-medium">
-                      <Github className="w-4 h-4" />
-                      Code
-                    </button>
-                  </div>
+
                 </div>
               </motion.div>
             ))}

@@ -8,31 +8,44 @@ const Experience = () => {
       title: 'Full Stack Developer Intern',
       company: 'Keyan Technologies',
       period: 'Jun 2025 – Jul 2025',
+      duration: '2 months',
       description: 'Built admin dashboards using React, Vite, Material UI with reusable components and agile workflow.',
-      highlights: [
-        'Developed modular React components',
-        'Implemented Material UI design system',
-        'Worked with Vite for optimized builds',
-        'Collaborated in agile environment',
+      responsibilities: [
+        'Developed modular React components for enterprise dashboard',
+        'Implemented Material UI design system with custom theming',
+        'Optimized builds with Vite achieving 40% faster load times',
+        'Collaborated in 2-week agile sprints with team',
+        'Conducted code reviews and best practices documentation',
       ],
+      icon: '💼',
     },
     {
-      title: 'Web Developer',
-      company: 'Freelance Client Projects',
-      period: 'Jan 2023 – Sept 2025',
-      description: 'Delivered 30+ client websites including portfolios, business sites, and landing pages with SEO and performance optimization.',
-      highlights: [
-        'Built 30+ production websites',
-        'Implemented SEO best practices',
-        'Optimized performance and loading times',
-        'Managed client relationships',
-        'Deployed on Vercel and GoDaddy',
+      title: 'Freelance Web Developer',
+      company: 'Self-Employed',
+      period: 'Jan 2023 – Present',
+      duration: '2+ years',
+      description: 'Delivered 30+ production websites for diverse clients including startups, businesses, and agencies.',
+      responsibilities: [
+        'Designed and built 30+ fully responsive websites',
+        'Implemented SEO optimization (Meta tags, structured data, sitemap)',
+        'Optimized performance achieving 90+ Lighthouse scores',
+        'Managed end-to-end project lifecycle from design to deployment',
+        'Maintained and supported deployed applications on Vercel',
       ],
+      icon: '🚀',
     },
   ]
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: { staggerChildren: 0.1 },
+    },
+  }
+
   return (
-    <section id="experience" className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-accent/5 border-y border-border/50">
+    <section id="experience" className="relative py-16 sm:py-24 md:py-32 px-4 sm:px-6 lg:px-8 bg-primary/5 border-y border-primary/20">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0 }}
@@ -43,7 +56,7 @@ const Experience = () => {
         >
           {/* Section Title */}
           <div className="space-y-2 sm:space-y-4">
-            <            motion.h2
+            <motion.h2
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6 }}
@@ -55,90 +68,82 @@ const Experience = () => {
             <div className="h-1 sm:h-1.5 w-12 sm:w-16 bg-primary rounded-full" />
           </div>
 
-          {/* Timeline */}
-          <div className="space-y-6 sm:space-y-8 relative">
-            {/* Timeline Line */}
-              <div className="absolute left-4 sm:left-6 lg:left-auto top-0 bottom-0 w-1 bg-primary lg:hidden" />
-
+          {/* Experience Cards */}
+          <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="grid md:grid-cols-2 gap-6 sm:gap-8"
+          >
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                className="lg:grid lg:grid-cols-2 lg:gap-8 lg:items-center"
+                whileHover={{ y: -5 }}
+                className="group rounded-2xl overflow-hidden bg-background border border-primary/30 hover:border-primary/60 transition-all duration-300 h-full"
               >
-                {/* Timeline Dot for Mobile */}
-                <div className="lg:hidden absolute left-0 top-6 sm:top-8 w-8 h-8 bg-background border-4 border-primary rounded-full" />
-
-                {/* Content */}
-                <div
-                  className={`ml-12 sm:ml-14 lg:ml-0 space-y-2 sm:space-y-4 ${
-                    index % 2 === 1 ? 'lg:col-start-2' : ''
-                  }`}
-                >
-                  <motion.div
-                    whileHover={{ x: 5 }}
-                    className="inline-block"
-                  >
-                    <span className="px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm bg-primary/20 text-primary rounded-full border border-primary/30 font-medium">
-                      {exp.period}
-                    </span>
-                  </motion.div>
-
-                  <h3 className="text-xl sm:text-2xl font-bold text-foreground">
-                    {exp.title}
-                  </h3>
-
-                  <p className="text-sm sm:text-base font-semibold text-primary">
-                    {exp.company}
-                  </p>
-
-                  <p className="text-sm sm:text-base text-foreground/80 leading-relaxed">
-                    {exp.description}
-                  </p>
-
-                  {/* Highlights */}
-                  <div className="pt-2 sm:pt-4 grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
-                    {exp.highlights.map((highlight, i) => (
-                      <motion.div
-                        key={i}
-                        initial={{ opacity: 0 }}
-                        whileInView={{ opacity: 1 }}
-                        transition={{ duration: 0.4, delay: 0.1 + i * 0.05 }}
-                        viewport={{ once: true }}
-                        className="flex items-start gap-2 sm:gap-3 text-xs sm:text-sm"
-                      >
-                        <span className="text-primary font-bold mt-0.5">✓</span>
-                        <span className="text-foreground/70">{highlight}</span>
-                      </motion.div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Visual Element */}
-                <motion.div
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  whileInView={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                  viewport={{ once: true }}
-                  className="hidden lg:block p-6 rounded-2xl bg-primary/10 border border-primary/30"
-                >
-                  <div className="space-y-4">
-                    <div className="h-40 bg-primary/20 rounded-lg flex items-center justify-center">
-                      <span className="text-4xl font-bold text-primary/30">
-                        {index === 0 ? '📊' : '💼'}
-                      </span>
+                {/* Card Header */}
+                <div className="p-6 sm:p-8 space-y-4 sm:space-y-6 h-full flex flex-col">
+                  {/* Top Section */}
+                  <div className="space-y-3">
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="text-4xl sm:text-5xl group-hover:scale-110 transition-transform">{exp.icon}</div>
+                      <div className="text-right">
+                        <span className="inline-block px-3 sm:px-4 py-1 sm:py-1.5 text-xs sm:text-sm bg-primary/20 text-primary rounded-full border border-primary/30 font-medium">
+                          {exp.duration}
+                        </span>
+                      </div>
                     </div>
-                    <p className="text-xs sm:text-sm text-foreground/60 text-center">
-                      {index === 0 ? 'Building dashboards' : 'Delivering solutions'}
+
+                    {/* Job Title & Company */}
+                    <div>
+                      <h3 className="text-lg sm:text-xl font-bold text-foreground group-hover:text-primary transition-colors">
+                        {exp.title}
+                      </h3>
+                      <p className="text-sm sm:text-base text-primary font-semibold mt-1">
+                        {exp.company}
+                      </p>
+                    </div>
+
+                    {/* Period */}
+                    <p className="text-xs sm:text-sm text-foreground/60 flex items-center gap-2">
+                      <span className="w-1.5 h-1.5 rounded-full bg-primary/50" />
+                      {exp.period}
+                    </p>
+
+                    {/* Description */}
+                    <p className="text-sm sm:text-base text-foreground/80 leading-relaxed pt-2">
+                      {exp.description}
                     </p>
                   </div>
-                </motion.div>
+
+                  {/* Responsibilities */}
+                  <div className="flex-1 space-y-3 border-t border-primary/20 pt-6">
+                    <p className="text-xs sm:text-sm font-semibold text-primary">Key Responsibilities:</p>
+                    <ul className="space-y-2">
+                      {exp.responsibilities.map((resp, i) => (
+                        <motion.li
+                          key={i}
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.3, delay: i * 0.05 }}
+                          viewport={{ once: true }}
+                          className="text-xs sm:text-sm text-foreground/70 flex items-start gap-2"
+                        >
+                          <span className="text-primary font-bold mt-0.5 flex-shrink-0">→</span>
+                          <span>{resp}</span>
+                        </motion.li>
+                      ))}
+                    </ul>
+                  </div>
+                </div>
               </motion.div>
             ))}
-          </div>
+          </motion.div>
         </motion.div>
       </div>
     </section>
