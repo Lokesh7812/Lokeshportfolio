@@ -158,7 +158,7 @@ const Hero = () => {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center pt-4 sm:pt-8"
           >
             <button
-              onClick={() => document.querySelector('#projects')?.scrollIntoView({ behavior: 'smooth' })}
+              onClick={() => document.querySelector('#clients')?.scrollIntoView({ behavior: 'smooth' })}
               className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-primary text-primary-foreground font-semibold rounded-lg hover:shadow-lg hover:shadow-primary/30 hover:bg-primary/90 transition-all duration-300 flex items-center justify-center gap-2 text-sm sm:text-base"
             >
               View Projects <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
