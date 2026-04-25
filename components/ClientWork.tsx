@@ -45,6 +45,30 @@ const ClientWork = () => {
       color: 'from-orange-500 to-amber-600',
       initials: 'RK',
     },
+    {
+      name: 'Finzura Next Gen Global',
+      url: 'https://www.finzuranextgenglobal.com',
+      type: 'Corporate Website',
+      description: 'Professional corporate website for global services',
+      color: 'from-cyan-500 to-cyan-600',
+      initials: 'FNG',
+    },
+    {
+      name: 'YRS Gas Pipeline Installation',
+      url: 'https://www.yrsgaspipelineinstallation.com/',
+      type: 'Industrial Services',
+      description: 'Professional website for gas pipeline installation services',
+      color: 'from-red-500 to-red-600',
+      initials: 'YRS',
+    },
+    {
+      name: 'Safe and Study Academy',
+      url: 'https://www.safeandstudyacademy.in/',
+      type: 'Educational Platform',
+      description: 'Online educational platform for students and learners',
+      color: 'from-green-500 to-green-600',
+      initials: 'SSA',
+    },
   ]
 
   const containerVariants = {
@@ -131,7 +155,7 @@ const ClientWork = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
-            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3 sm:gap-4"
+            className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4"
           >
             {clients.map((client, index) => (
               <motion.a
