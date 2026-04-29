@@ -137,7 +137,7 @@ const Hero = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg sm:text-xl md:text-2xl text-muted-foreground font-light max-w-3xl mx-auto text-balance"
           >
-            MERN Stack Developer &amp; Full Stack Web Developer
+            Full Stack Web Developer and Automation Test Engineer
           </motion.h2>
 
           {/* Description */}

@@ -1,49 +1,49 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Code2, Layout, Server, Wrench, Lightbulb, Zap } from 'lucide-react'
+import { Code2, Layout, Server, Wrench, Lightbulb, Zap, CheckCircle2, Users, Settings } from 'lucide-react'
 
 const Skills = () => {
   const bentoItems = [
     {
-      title: 'Frontend Architecture',
-      icon: <Layout className="w-6 h-6 text-pink-500" />,
-      skills: ['React.js', 'Vite', 'Tailwind CSS', 'Framer Motion', 'Bootstrap', 'Material UI'],
-      className: 'md:col-span-2 md:row-span-1',
-      bgGradient: 'from-pink-500/10 to-rose-500/10',
-      borderGlow: 'group-hover:border-pink-500/50'
-    },
-    {
-      title: 'Backend Systems',
-      icon: <Server className="w-6 h-6 text-emerald-500" />,
-      skills: ['Node.js', 'Express.js', 'MongoDB', 'MySQL', 'REST APIs'],
-      className: 'md:col-span-1 md:row-span-2',
-      bgGradient: 'from-emerald-500/10 to-teal-500/10',
-      borderGlow: 'group-hover:border-emerald-500/50'
-    },
-    {
-      title: 'Core Languages',
-      icon: <Code2 className="w-6 h-6 text-blue-500" />,
-      skills: ['JavaScript', 'Java', 'HTML5', 'CSS3'],
+      title: 'Core Computer Science',
+      icon: <Lightbulb className="w-6 h-6 text-blue-500" />,
+      skills: ['Java', 'OOP', 'DBMS', 'Data Structures'],
       className: 'md:col-span-1 md:row-span-1',
       bgGradient: 'from-blue-500/10 to-cyan-500/10',
       borderGlow: 'group-hover:border-blue-500/50'
     },
     {
-      title: 'Tools & Ecosystem',
-      icon: <Wrench className="w-6 h-6 text-purple-500" />,
-      skills: ['Git', 'GitHub', 'Vercel', 'Firebase', 'GoDaddy', 'Postman'],
+      title: 'Development',
+      icon: <Layout className="w-6 h-6 text-pink-500" />,
+      skills: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
       className: 'md:col-span-1 md:row-span-1',
-      bgGradient: 'from-purple-500/10 to-violet-500/10',
-      borderGlow: 'group-hover:border-purple-500/50'
+      bgGradient: 'from-pink-500/10 to-rose-500/10',
+      borderGlow: 'group-hover:border-pink-500/50'
     },
     {
-      title: 'Computer Science & Concepts',
-      icon: <Lightbulb className="w-6 h-6 text-amber-500" />,
-      skills: ['Object-Oriented Programming', 'DBMS', 'Data Structures', 'System Architecture', 'SEO Optimization'],
-      className: 'md:col-span-3 lg:col-span-3',
+      title: 'Testing & Automation',
+      icon: <Wrench className="w-6 h-6 text-emerald-500" />,
+      skills: ['Core Java', 'Selenium WebDriver', 'TestNG', 'Maven', 'Playwright'],
+      className: 'md:col-span-1 md:row-span-2',
+      bgGradient: 'from-emerald-500/10 to-teal-500/10',
+      borderGlow: 'group-hover:border-emerald-500/50'
+    },
+    {
+      title: 'Testing Concepts',
+      icon: <Settings className="w-6 h-6 text-amber-500" />,
+      skills: ['Page Object Model (POM)', 'Locators & Selectors', 'Wait Strategies', 'Assertions', 'Cross-browser Testing'],
+      className: 'md:col-span-2 md:row-span-1',
       bgGradient: 'from-amber-500/10 to-orange-500/10',
       borderGlow: 'group-hover:border-amber-500/50'
+    },
+    {
+      title: 'Soft Skills',
+      icon: <Users className="w-6 h-6 text-purple-500" />,
+      skills: ['Team Collaboration', 'Problem Solving', 'Time Management', 'Adaptability'],
+      className: 'md:col-span-3 lg:col-span-1',
+      bgGradient: 'from-purple-500/10 to-violet-500/10',
+      borderGlow: 'group-hover:border-purple-500/50'
     }
   ]
 
@@ -68,7 +68,7 @@ const Skills = () => {
              </h2>
           </div>
           <p className="text-lg sm:text-xl text-foreground/70 max-w-2xl font-medium mx-auto sm:mx-0">
-            A curated ecosystem of technologies I use to build scalable, high-performance digital experiences. Moving beyond just code to full-stack problem solving.
+            A curated ecosystem of technologies I use to build scalable, high-performance digital experiences. Moving beyond just code to full-stack problem solving and automation.
           </p>
         </motion.div>
 
@@ -101,9 +101,14 @@ const Skills = () => {
                     {item.skills.map((skill, sIdx) => (
                       <span
                         key={sIdx}
-                        className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-xl bg-foreground/5 text-foreground/80 border border-foreground/10 hover:bg-foreground/10 cursor-default hover:text-foreground transition-colors duration-300 backdrop-blur-md"
+                        className="px-3 sm:px-4 py-1.5 sm:py-2 text-xs sm:text-sm font-semibold rounded-xl bg-foreground/5 text-foreground/80 border border-foreground/10 hover:bg-foreground/10 cursor-default hover:text-foreground transition-colors duration-300 backdrop-blur-md flex items-center gap-1.5"
                       >
                         {skill}
+                        {skill === 'Playwright' && (
+                          <span className="text-[10px] bg-primary/20 text-primary px-1.5 py-0.5 rounded border border-primary/30">
+                            Currently Learning 🚀
+                          </span>
+                        )}
                       </span>
                     ))}
                   </div>

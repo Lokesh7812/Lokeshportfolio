@@ -82,15 +82,15 @@ const About = () => {
               {/* About Text */}
               <div className="space-y-4 sm:space-y-6 text-sm sm:text-base leading-relaxed text-foreground/90">
                 <p>
-                  I&apos;m a <span className="font-semibold text-primary">Final year Computer Science Engineering student</span> and passionate <span className="font-semibold text-primary">MERN Stack Developer</span> with hands-on experience delivering <span className="font-semibold text-primary">30+ real-world client websites</span> and scalable web applications.
+                  Final year Computer Science Engineering student and aspiring <span className="font-semibold text-primary">MERN Stack Developer & Automation Testing Enthusiast</span> with strong hands-on experience in building responsive, scalable, and client-focused web applications.
                 </p>
 
                 <p>
-                  With specialization in <span className="font-semibold text-primary">React.js, MongoDB, and modern UI engineering</span>, I have a strong focus on performance, responsiveness, and user-centric design. I excel at converting business requirements into production-ready solutions.
+                  Skilled in <span className="font-semibold text-primary">React.js, MySql, MongoDB, and Selenium WebDriver</span>, with working knowledge of Node.js, Express.js, and modern testing frameworks. Delivered 30+ real-world client projects and implemented both development and automation testing practices for production-ready solutions.
                 </p>
 
                 <p>
-                  My journey in web development has been shaped by practical experience building everything from portfolios and business sites to complex admin dashboards and AI-powered platforms. I&apos;m deeply committed to writing clean, maintainable code and creating exceptional user experiences.
+                  Currently exploring <span className="font-semibold text-primary">Playwright</span> for next-generation test automation.
                 </p>
               </div>
 

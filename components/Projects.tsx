@@ -5,37 +5,33 @@ import { motion } from 'framer-motion'
 const Projects = () => {
   const projects = [
     {
-      title: 'Teclanc.ai — AI Website Builder',
-      description: 'AI-powered website builder that generates fully functional websites from text prompts. Features real-time code editor, live preview, and deployment capabilities.',
+      title: 'Web Application Automation Testing using Selenium (Java)',
+      description: 'A comprehensive automation testing framework built to ensure the reliability and functionality of web applications.',
       status: 'Completed',
-      technologies: ['React', 'Next.js', 'AI APIs', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-      features: ['Prompt-to-website generation', 'Live code editor with preview', 'One-click deployment', 'Responsive design generation'],
+      technologies: ['Selenium WebDriver', 'Java', 'TestNG', 'Maven', 'POM Architecture'],
+      features: [
+        'Developed automated test scripts using Selenium WebDriver with Java for functional testing.',
+        'Designed scalable test architecture using Page Object Model (POM).',
+        'Automated critical workflows like login, form validation, navigation, and UI verification.',
+        'Used TestNG for execution, assertions, and reporting.',
+        'Integrated Maven for dependency management and build automation.'
+      ],
+      emoji: '⚙️',
+    },
+    {
+      title: 'Teclanc.ai — AI-Driven Website Builder',
+      description: 'An AI-assisted platform for prompt-based website generation designed to help beginners learn web development practically with an education-first approach.',
+      status: 'Completed',
+      technologies: ['Node.js', 'REST APIs', 'MySQL', 'JWT', 'HTML/CSS/JS', 'Algorithms'],
+      features: [
+        'Enabled AI generation of HTML, CSS, and JavaScript with editable source code for experimentation and learning.',
+        'Implemented live responsive preview, in-browser code editor, and downloadable source files for hands-on practice.',
+        'Developed secure JWT-based authentication and stored prompt/project history in a MySQL database.',
+        'Designed a client–server architecture using Node.js and REST APIs with an education-first approach.',
+        'Applied core CS concepts including DBMS, computer networks, information security, and algorithms.'
+      ],
       emoji: '🤖',
-    },
-    {
-      title: 'Pneumonia Detection System',
-      description: 'Deep learning model for accurate pneumonia detection from chest X-ray images using CNN and VGG19 architecture with medical-grade accuracy.',
-      status: 'Completed',
-      technologies: ['Python', 'TensorFlow', 'CNN', 'VGG19', 'NumPy', 'OpenCV'],
-      features: ['X-ray image classification', '95% accuracy rate', 'Model training & evaluation', 'Prediction API'],
-      emoji: '🫁',
-    },
-    {
-      title: 'Admin Dashboard — iNetz Technologies',
-      description: 'Enterprise-grade admin dashboard built with React and Vite featuring modular components, real-time data visualization, and Material UI design system.',
-      status: 'Completed',
-      technologies: ['React', 'Vite', 'Material UI', 'JavaScript', 'REST APIs'],
-      features: ['Modular component architecture', 'Responsive design', 'Real-time data updates', 'Admin features & permissions'],
-      emoji: '📊',
-    },
-    {
-      title: '30+ Client Websites',
-      description: 'Portfolio of diverse web solutions for startups, agencies, and businesses. Includes e-commerce sites, portfolios, landing pages, and business websites.',
-      status: 'Completed',
-      technologies: ['React', 'Next.js', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'],
-      features: ['SEO optimized', 'High performance (90+ Lighthouse)', 'Fully responsive', 'CMS integration ready'],
-      emoji: '💼',
-    },
+    }
   ]
 
   const containerVariants = {

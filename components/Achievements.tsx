@@ -6,7 +6,7 @@ import { Award } from 'lucide-react'
 const Achievements = () => {
   const achievements = [
     {
-      title: 'Best Outgoing Student Nominee',
+      title: 'Best Outgoing Student in overall College',
       icon: '🌟',
       category: 'Academic',
     },
@@ -28,7 +28,7 @@ const Achievements = () => {
     },
     {
       title: '100% Attendance',
-      subtitle: '6 consecutive semesters',
+      subtitle: '7 consecutive semesters',
       icon: '📅',
       category: 'Academic',
     },
