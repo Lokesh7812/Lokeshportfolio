@@ -64,7 +64,7 @@ const Skills = () => {
           <div className="flex items-center justify-center sm:justify-start gap-4 mb-4">
              <Zap className="w-8 h-8 md:w-10 md:h-10 text-primary" />
              <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight text-foreground">
-                Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Arsenal</span>
+                Technical <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-accent">Skills</span>
              </h2>
           </div>
           <p className="text-lg sm:text-xl text-foreground/70 max-w-2xl font-medium mx-auto sm:mx-0">
